@@ -1,8 +1,8 @@
-from enum import Enum
+from enum import Enum, IntEnum
 import numpy as np
 
 
-class PieceType(Enum):
+class PieceType(np.uint64, Enum):
     PAWN = np.uint64(0)
     KNIGHT = np.uint64(1)
     BISHOP = np.uint64(2)
